@@ -33,7 +33,7 @@ python3 src/task1.py
   ![image](https://github.com/user-attachments/assets/02eff30e-8d88-46f7-9da8-6d3b0e57bb18)
 
 4. **Elliptic Curve Digital Signature**<br>
-In this task, public and private keys are generated using an elliptic curve cryptography algorithm. The code hashes a predefined text using SHA-256 and creates a digital signature by encrypting the hash value with the private key. The signature is verified by decrypting it with the public key and comparing the resulting hash with the original hash value.<br><br>
+In this task, public and private keys are generated using elliptic curve cryptography algorithm. The code hashes a predefined text using SHA-256 and creates a digital signature by encrypting the hash value with the private key. The signature is verified by decrypting it with the public key and comparing the resulting hash with the original hash value.<br><br>
 ![image](https://github.com/user-attachments/assets/9d75efce-da67-4cdc-be1c-ebb7defeb9bc)
 
 
