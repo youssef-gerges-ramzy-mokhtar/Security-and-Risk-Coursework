@@ -30,22 +30,26 @@ def verify_signature(signature, text, pub_key):
 
 if __name__ == "__main__":
   # Generating Keys
+  print("Genearting Keys")
   priv_key, pub_key = generate_keys()
   print("private key: ", priv_key.private_numbers().private_value)
   print("public key (x, y): ", pub_key.public_numbers().x, pub_key.public_numbers().y)
   print()
 
   # Hashing Plain Text
+  print("Hashing predefined text")
   plain_text = "LZSCC.363"
   hash_value = sha256_hash(plain_text)
   print("SHA-256 hash of '{}': {}".format(plain_text, hash_value.hex()))
   print()
 
   # Creating the digital signature
+  print("Creating the digital signature")
   signature = sign(priv_key, hash_value)
   print(signature)
   print()
 
   # Verifying the digital signature
+  print("Verifying the Digital Signature")
   verified = verify_signature(signature, plain_text, pub_key)
   print("Verified: ", verified)
